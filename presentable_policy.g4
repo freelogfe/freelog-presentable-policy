@@ -1,4 +1,4 @@
-grammar policy;
+grammar presentable_policy;
 
 p : (segment)+ EOF
 ;
