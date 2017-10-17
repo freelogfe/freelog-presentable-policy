@@ -1,0 +1,14 @@
+{
+  "name": "freelog-presentable-policy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gen": "java -jar C:/Users/Phil/lib/antlr-4.7-complete.jar -Dlanguage=JavaScript presentable-policy.g4 -o gen"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antlr4": "^4.7.0"
+  }
+}
