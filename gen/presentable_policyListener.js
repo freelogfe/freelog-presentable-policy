@@ -92,15 +92,6 @@ presentable_policyListener.prototype.exitTarget_clause = function(ctx) {
 };
 
 
-// Enter a parse tree produced by presentable_policyParser#accepting.
-presentable_policyListener.prototype.enterAccepting = function(ctx) {
-};
-
-// Exit a parse tree produced by presentable_policyParser#accepting.
-presentable_policyListener.prototype.exitAccepting = function(ctx) {
-};
-
-
 // Enter a parse tree produced by presentable_policyParser#event.
 presentable_policyListener.prototype.enterEvent = function(ctx) {
 };
@@ -272,21 +263,12 @@ presentable_policyListener.prototype.exitLicense_resource_id = function(ctx) {
 };
 
 
-// Enter a parse tree produced by presentable_policyParser#account_id.
-presentable_policyListener.prototype.enterAccount_id = function(ctx) {
+// Enter a parse tree produced by presentable_policyParser#user_individual.
+presentable_policyListener.prototype.enterUser_individual = function(ctx) {
 };
 
-// Exit a parse tree produced by presentable_policyParser#account_id.
-presentable_policyListener.prototype.exitAccount_id = function(ctx) {
-};
-
-
-// Enter a parse tree produced by presentable_policyParser#users.
-presentable_policyListener.prototype.enterUsers = function(ctx) {
-};
-
-// Exit a parse tree produced by presentable_policyParser#users.
-presentable_policyListener.prototype.exitUsers = function(ctx) {
+// Exit a parse tree produced by presentable_policyParser#user_individual.
+presentable_policyListener.prototype.exitUser_individual = function(ctx) {
 };
 
 
@@ -296,24 +278,6 @@ presentable_policyListener.prototype.enterUser_groups = function(ctx) {
 
 // Exit a parse tree produced by presentable_policyParser#user_groups.
 presentable_policyListener.prototype.exitUser_groups = function(ctx) {
-};
-
-
-// Enter a parse tree produced by presentable_policyParser#and.
-presentable_policyListener.prototype.enterAnd = function(ctx) {
-};
-
-// Exit a parse tree produced by presentable_policyParser#and.
-presentable_policyListener.prototype.exitAnd = function(ctx) {
-};
-
-
-// Enter a parse tree produced by presentable_policyParser#view_unit.
-presentable_policyListener.prototype.enterView_unit = function(ctx) {
-};
-
-// Exit a parse tree produced by presentable_policyParser#view_unit.
-presentable_policyListener.prototype.exitView_unit = function(ctx) {
 };
 
 

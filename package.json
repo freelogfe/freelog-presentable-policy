@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gen": "java -jar C:/Users/Phil/lib/antlr-4.7-complete.jar -Dlanguage=JavaScript presentable-policy.g4 -o gen"
+    "gen": "java -jar C:/Users/Phil/lib/antlr-4.7-complete.jar -Dlanguage=JavaScript presentable_policy.g4 -o gen"
   },
   "author": "",
   "license": "ISC",
