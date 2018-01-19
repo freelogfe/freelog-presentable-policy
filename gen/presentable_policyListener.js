@@ -38,15 +38,6 @@ presentable_policyListener.prototype.exitAudience_clause = function(ctx) {
 };
 
 
-// Enter a parse tree produced by presentable_policyParser#athorize_token_clause.
-presentable_policyListener.prototype.enterAthorize_token_clause = function(ctx) {
-};
-
-// Exit a parse tree produced by presentable_policyParser#athorize_token_clause.
-presentable_policyListener.prototype.exitAthorize_token_clause = function(ctx) {
-};
-
-
 // Enter a parse tree produced by presentable_policyParser#audience_individuals_clause.
 presentable_policyListener.prototype.enterAudience_individuals_clause = function(ctx) {
 };

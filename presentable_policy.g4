@@ -1,16 +1,14 @@
 grammar presentable_policy;
 
-p : (segment)+ EOF
+p : (segment)* EOF
 ;
-segment : 'For' audience_clause+ ':' (state_clause)* athorize_token_clause
+segment : 'For' audience_clause+ ':' (state_clause)*
 ;
 audience_clause
-  : audience_individuals_clause
+  : audience_individuals_clause 'and' audience_groups_clause
+  | audience_individuals_clause
   | audience_groups_clause
-  | audience_individuals_clause 'and' audience_groups_clause
-  ;
-athorize_token_clause
-  : 'I agree to authorize token in' ((',')* ID)+
+
   ;
 audience_individuals_clause
   : audience_individuals_clause ',' audience_individuals_clause
@@ -97,13 +95,13 @@ settlement_event
 
 license_resource_id : ID;
 user_individual : FEATHERACCOUNT;
-user_groups : 'RegisteredUser' | 'LoginUser' | 'AllVisiter' | 'RegisteredNode';
+user_groups : 'REGISTERED_USERS' | 'PUBLIC' | 'NODES';
 time_unit : 'year' | 'week' | 'day'| 'cycle';
 start_hour : INT ':' INT;
 end_hour : INT ':' INT;
 
 
-ID  : ([a-zA-Z]|'_')+;
+ID  : ([^a-zA-Z]|'_')+;
 INT : [0-9]+;
 FEATHERACCOUNT : [0-9a-zA-Z@.]+;
 WS  : [ \t\r\n]+ -> skip;
