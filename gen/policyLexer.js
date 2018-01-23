@@ -378,112 +378,99 @@ var atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
 
 var decisionsToDFA = atn.decisionToState.map( function(ds, index) { return new antlr4.dfa.DFA(ds, index); });
 
-function presentable_policyLexer(input) {
+function policyLexer(input) {
 	antlr4.Lexer.call(this, input);
     this._interp = new antlr4.atn.LexerATNSimulator(this, atn, decisionsToDFA, new antlr4.PredictionContextCache());
     return this;
 }
 
-presentable_policyLexer.prototype = Object.create(antlr4.Lexer.prototype);
-presentable_policyLexer.prototype.constructor = presentable_policyLexer;
+policyLexer.prototype = Object.create(antlr4.Lexer.prototype);
+policyLexer.prototype.constructor = policyLexer;
 
-presentable_policyLexer.EOF = antlr4.Token.EOF;
-presentable_policyLexer.T__0 = 1;
-presentable_policyLexer.T__1 = 2;
-presentable_policyLexer.T__2 = 3;
-presentable_policyLexer.T__3 = 4;
-presentable_policyLexer.T__4 = 5;
-presentable_policyLexer.T__5 = 6;
-presentable_policyLexer.T__6 = 7;
-presentable_policyLexer.T__7 = 8;
-presentable_policyLexer.T__8 = 9;
-presentable_policyLexer.T__9 = 10;
-presentable_policyLexer.T__10 = 11;
-presentable_policyLexer.T__11 = 12;
-presentable_policyLexer.T__12 = 13;
-presentable_policyLexer.T__13 = 14;
-presentable_policyLexer.T__14 = 15;
-presentable_policyLexer.T__15 = 16;
-presentable_policyLexer.T__16 = 17;
-presentable_policyLexer.T__17 = 18;
-presentable_policyLexer.T__18 = 19;
-presentable_policyLexer.T__19 = 20;
-presentable_policyLexer.T__20 = 21;
-presentable_policyLexer.T__21 = 22;
-presentable_policyLexer.T__22 = 23;
-presentable_policyLexer.T__23 = 24;
-presentable_policyLexer.T__24 = 25;
-presentable_policyLexer.T__25 = 26;
-presentable_policyLexer.GROUPUSER = 27;
-presentable_policyLexer.FOR = 28;
-presentable_policyLexer.REGISTERED_USERS = 29;
-presentable_policyLexer.PUBLIC = 30;
-presentable_policyLexer.NODES = 31;
-presentable_policyLexer.TERMINATE = 32;
-presentable_policyLexer.ID = 33;
-presentable_policyLexer.INTEGER_NUMBER = 34;
-presentable_policyLexer.USERACCOUNT = 35;
-presentable_policyLexer.FEATHERACCOUNT = 36;
-presentable_policyLexer.WS = 37;
-presentable_policyLexer.DATE = 38;
+policyLexer.EOF = antlr4.Token.EOF;
+policyLexer.T__0 = 1;
+policyLexer.T__1 = 2;
+policyLexer.T__2 = 3;
+policyLexer.T__3 = 4;
+policyLexer.T__4 = 5;
+policyLexer.T__5 = 6;
+policyLexer.T__6 = 7;
+policyLexer.T__7 = 8;
+policyLexer.T__8 = 9;
+policyLexer.T__9 = 10;
+policyLexer.T__10 = 11;
+policyLexer.T__11 = 12;
+policyLexer.T__12 = 13;
+policyLexer.T__13 = 14;
+policyLexer.T__14 = 15;
+policyLexer.T__15 = 16;
+policyLexer.T__16 = 17;
+policyLexer.T__17 = 18;
+policyLexer.T__18 = 19;
+policyLexer.T__19 = 20;
+policyLexer.T__20 = 21;
+policyLexer.T__21 = 22;
+policyLexer.T__22 = 23;
+policyLexer.T__23 = 24;
+policyLexer.T__24 = 25;
+policyLexer.T__25 = 26;
+policyLexer.GROUPUSER = 27;
+policyLexer.FOR = 28;
+policyLexer.REGISTERED_USERS = 29;
+policyLexer.PUBLIC = 30;
+policyLexer.NODES = 31;
+policyLexer.TERMINATE = 32;
+policyLexer.ID = 33;
+policyLexer.INTEGER_NUMBER = 34;
+policyLexer.USERACCOUNT = 35;
+policyLexer.FEATHERACCOUNT = 36;
+policyLexer.WS = 37;
+policyLexer.DATE = 38;
 
-presentable_policyLexer.prototype.channelNames = [ "DEFAULT_TOKEN_CHANNEL", "HIDDEN" ];
+policyLexer.prototype.channelNames = [ "DEFAULT_TOKEN_CHANNEL", "HIDDEN" ];
 
-presentable_policyLexer.prototype.modeNames = [ "DEFAULT_MODE" ];
+policyLexer.prototype.modeNames = [ "DEFAULT_MODE" ];
 
-presentable_policyLexer.prototype.literalNames = [ null, "':'", "','", "'in'", 
-                                                   "'proceed to'", "'on'", 
-                                                   "'accepting'", "'and on'", 
-                                                   "'the end of'", "'date'", 
-                                                   "'after contract creation'", 
-                                                   "'price priceExpression'", 
-                                                   "'transaction of'", "'to'", 
-                                                   "'contract_guaranty of'", 
-                                                   "'refund after'", "'day'", 
-                                                   "'platform_guaranty of'", 
-                                                   "'license'", "'visit_increment of'", 
-                                                   "'visit of'", "'account_balance greater than'", 
-                                                   "'account_balance smaller than'", 
-                                                   "'account_settled'", 
-                                                   "'year'", "'week'", "'cycle'" ];
+policyLexer.prototype.literalNames = [ null, "':'", "','", "'in'", "'proceed to'", 
+                                       "'on'", "'accepting'", "'and on'", 
+                                       "'the end of'", "'date'", "'after contract creation'", 
+                                       "'price priceExpression'", "'transaction of'", 
+                                       "'to'", "'contract_guaranty of'", 
+                                       "'refund after'", "'day'", "'platform_guaranty of'", 
+                                       "'license'", "'visit_increment of'", 
+                                       "'visit of'", "'account_balance greater than'", 
+                                       "'account_balance smaller than'", 
+                                       "'account_settled'", "'year'", "'week'", 
+                                       "'cycle'" ];
 
-presentable_policyLexer.prototype.symbolicNames = [ null, null, null, null, 
-                                                    null, null, null, null, 
-                                                    null, null, null, null, 
-                                                    null, null, null, null, 
-                                                    null, null, null, null, 
-                                                    null, null, null, null, 
-                                                    null, null, null, "GROUPUSER", 
-                                                    "FOR", "REGISTERED_USERS", 
-                                                    "PUBLIC", "NODES", "TERMINATE", 
-                                                    "ID", "INTEGER_NUMBER", 
-                                                    "USERACCOUNT", "FEATHERACCOUNT", 
-                                                    "WS", "DATE" ];
+policyLexer.prototype.symbolicNames = [ null, null, null, null, null, null, 
+                                        null, null, null, null, null, null, 
+                                        null, null, null, null, null, null, 
+                                        null, null, null, null, null, null, 
+                                        null, null, null, "GROUPUSER", "FOR", 
+                                        "REGISTERED_USERS", "PUBLIC", "NODES", 
+                                        "TERMINATE", "ID", "INTEGER_NUMBER", 
+                                        "USERACCOUNT", "FEATHERACCOUNT", 
+                                        "WS", "DATE" ];
 
-presentable_policyLexer.prototype.ruleNames = [ "T__0", "T__1", "T__2", 
-                                                "T__3", "T__4", "T__5", 
-                                                "T__6", "T__7", "T__8", 
-                                                "T__9", "T__10", "T__11", 
-                                                "T__12", "T__13", "T__14", 
-                                                "T__15", "T__16", "T__17", 
-                                                "T__18", "T__19", "T__20", 
-                                                "T__21", "T__22", "T__23", 
-                                                "T__24", "T__25", "GROUPUSER", 
-                                                "FOR", "REGISTERED_USERS", 
-                                                "PUBLIC", "NODES", "TERMINATE", 
-                                                "CHAR", "A", "B", "C", "D", 
-                                                "E", "F", "G", "H", "I", 
-                                                "J", "K", "L", "M", "N", 
-                                                "O", "P", "Q", "R", "S", 
-                                                "T", "U", "V", "W", "X", 
-                                                "Y", "Z", "DIGIT", "LOWERCASE", 
-                                                "UPPERCASE", "ID", "INTEGER_NUMBER", 
-                                                "USERACCOUNT", "FEATHERACCOUNT", 
-                                                "WS", "DATE" ];
+policyLexer.prototype.ruleNames = [ "T__0", "T__1", "T__2", "T__3", "T__4", 
+                                    "T__5", "T__6", "T__7", "T__8", "T__9", 
+                                    "T__10", "T__11", "T__12", "T__13", 
+                                    "T__14", "T__15", "T__16", "T__17", 
+                                    "T__18", "T__19", "T__20", "T__21", 
+                                    "T__22", "T__23", "T__24", "T__25", 
+                                    "GROUPUSER", "FOR", "REGISTERED_USERS", 
+                                    "PUBLIC", "NODES", "TERMINATE", "CHAR", 
+                                    "A", "B", "C", "D", "E", "F", "G", "H", 
+                                    "I", "J", "K", "L", "M", "N", "O", "P", 
+                                    "Q", "R", "S", "T", "U", "V", "W", "X", 
+                                    "Y", "Z", "DIGIT", "LOWERCASE", "UPPERCASE", 
+                                    "ID", "INTEGER_NUMBER", "USERACCOUNT", 
+                                    "FEATHERACCOUNT", "WS", "DATE" ];
 
-presentable_policyLexer.prototype.grammarFileName = "presentable_policy.g4";
+policyLexer.prototype.grammarFileName = "presentable_policy.g4";
 
 
 
-exports.presentable_policyLexer = presentable_policyLexer;
+exports.policyLexer = policyLexer;
 
