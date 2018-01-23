@@ -88,18 +88,16 @@ settlement_event
 ;
 
 license_resource_id : ID;
-users : GROUPUSER | REGISTERED_USERS | PUBLIC | NODES | INTEGER_NUMBER | USERACCOUNT;
+users : ID |GROUPNODE | GROUPUSER;
 
 time_unit : 'year' | 'week' | 'day'| 'cycle';
 start_hour : INTEGER_NUMBER ':' INTEGER_NUMBER;
 end_hour : INTEGER_NUMBER ':' INTEGER_NUMBER;
 
+GROUPNODE : G R O U P '_' N O D E '_' ID*;
 GROUPUSER :  G R O U P '_' U S E R '_' ID*;
 
 FOR: F O R;
-REGISTERED_USERS : R E G I S T E R E D '_' U S R S;
-PUBLIC : P U B L I C;
-NODES : N O D E S;
 TERMINATE : T E R M I N A T E;
 fragment CHAR : . ;
 fragment A : ('A'|'a');
@@ -133,7 +131,7 @@ fragment DIGIT : [0-9] ;
 fragment LOWERCASE : [a-z];
 fragment UPPERCASE : [A-Z];
 
-ID  : ([<>a-zA-Z]|'_')+;
+ID  : ('_'| UPPERCASE | LOWERCASE| '<'|'>'| '-')+;
 INTEGER_NUMBER:  DIGIT+;
 
 USERACCOUNT :  (UPPERCASE | LOWERCASE | '.' | DIGIT)+  '@' (UPPERCASE | LOWERCASE | '.' | DIGIT)+;
