@@ -88,7 +88,7 @@ settlement_event
 ;
 
 license_resource_id : ID;
-users : GROUPUSER | REGISTERED_USERS | PUBLIC | NODES | INTEGER_NUMBER | USERACCOUNT;
+users : GROUPUSER | REGISTERED_USERS | PUBLIC | INTEGER_NUMBER | USERACCOUNT;
 
 time_unit : 'year' | 'week' | 'day'| 'cycle';
 start_hour : INTEGER_NUMBER ':' INTEGER_NUMBER;

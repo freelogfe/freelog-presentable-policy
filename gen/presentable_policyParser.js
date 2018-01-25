@@ -40,7 +40,7 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u001d\u0003\u001d\u0003\u001e\u0003\u001e\u0003\u001e\u0003\u001e\u0003",
     "\u001e\u0002\u0003\u0006\u001f\u0002\u0004\u0006\b\n\f\u000e\u0010\u0012",
     "\u0014\u0016\u0018\u001a\u001c\u001e \"$&(*,.02468:\u0002\u0004\u0005",
-    "\u0002\u001d\u001d\u001f!$%\u0004\u0002\u0012\u0012\u001a\u001c\u0002",
+    "\u0002\u001d\u001d\u001f $%\u0004\u0002\u0012\u0012\u001a\u001c\u0002",
     "\u00d3\u0002?\u0003\u0002\u0002\u0002\u0004D\u0003\u0002\u0002\u0002",
     "\u0006Q\u0003\u0002\u0002\u0002\bc\u0003\u0002\u0002\u0002\ne\u0003",
     "\u0002\u0002\u0002\fz\u0003\u0002\u0002\u0002\u000e\u0086\u0003\u0002",
@@ -414,7 +414,7 @@ presentable_policyParser.prototype.segment = function() {
             this.state = 70; 
             this._errHandler.sync(this);
             _la = this._input.LA(1);
-        } while(((((_la - 27)) & ~0x1f) == 0 && ((1 << (_la - 27)) & ((1 << (presentable_policyParser.GROUPUSER - 27)) | (1 << (presentable_policyParser.REGISTERED_USERS - 27)) | (1 << (presentable_policyParser.PUBLIC - 27)) | (1 << (presentable_policyParser.NODES - 27)) | (1 << (presentable_policyParser.INTEGER_NUMBER - 27)) | (1 << (presentable_policyParser.USERACCOUNT - 27)))) !== 0));
+        } while(((((_la - 27)) & ~0x1f) == 0 && ((1 << (_la - 27)) & ((1 << (presentable_policyParser.GROUPUSER - 27)) | (1 << (presentable_policyParser.REGISTERED_USERS - 27)) | (1 << (presentable_policyParser.PUBLIC - 27)) | (1 << (presentable_policyParser.INTEGER_NUMBER - 27)) | (1 << (presentable_policyParser.USERACCOUNT - 27)))) !== 0));
         this.state = 72;
         this.match(presentable_policyParser.T__0);
         this.state = 76;
@@ -2188,10 +2188,6 @@ UsersContext.prototype.PUBLIC = function() {
     return this.getToken(presentable_policyParser.PUBLIC, 0);
 };
 
-UsersContext.prototype.NODES = function() {
-    return this.getToken(presentable_policyParser.NODES, 0);
-};
-
 UsersContext.prototype.INTEGER_NUMBER = function() {
     return this.getToken(presentable_policyParser.INTEGER_NUMBER, 0);
 };
@@ -2226,7 +2222,7 @@ presentable_policyParser.prototype.users = function() {
         this.enterOuterAlt(localctx, 1);
         this.state = 203;
         _la = this._input.LA(1);
-        if(!(((((_la - 27)) & ~0x1f) == 0 && ((1 << (_la - 27)) & ((1 << (presentable_policyParser.GROUPUSER - 27)) | (1 << (presentable_policyParser.REGISTERED_USERS - 27)) | (1 << (presentable_policyParser.PUBLIC - 27)) | (1 << (presentable_policyParser.NODES - 27)) | (1 << (presentable_policyParser.INTEGER_NUMBER - 27)) | (1 << (presentable_policyParser.USERACCOUNT - 27)))) !== 0))) {
+        if(!(((((_la - 27)) & ~0x1f) == 0 && ((1 << (_la - 27)) & ((1 << (presentable_policyParser.GROUPUSER - 27)) | (1 << (presentable_policyParser.REGISTERED_USERS - 27)) | (1 << (presentable_policyParser.PUBLIC - 27)) | (1 << (presentable_policyParser.INTEGER_NUMBER - 27)) | (1 << (presentable_policyParser.USERACCOUNT - 27)))) !== 0))) {
         this._errHandler.recoverInline(this);
         }
         else {
