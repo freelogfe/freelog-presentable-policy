@@ -87,19 +87,18 @@ settlement_event
 : 'account_settled'
 ;
 
-license_resource_id : ID;
-users : GROUPUSER | REGISTERED_USERS | PUBLIC | INTEGER_NUMBER | USERACCOUNT;
+license_resource_id : FEATHERACCOUNT;
+users : SELF | GROUPUSER | REGISTERED_USERS | PUBLIC | INTEGER_NUMBER | USERACCOUNT;
 
 time_unit : 'year' | 'week' | 'day'| 'cycle';
 start_hour : INTEGER_NUMBER ':' INTEGER_NUMBER;
 end_hour : INTEGER_NUMBER ':' INTEGER_NUMBER;
 
-GROUPUSER :  G R O U P '_' U S E R '_' ID*;
-
 FOR: F O R;
+SELF : S E L F;
+GROUPUSER :  G R O U P '_' U S E R '_' ID*;
 REGISTERED_USERS : R E G I S T E R E D '_' U S E R S;
 PUBLIC : P U B L I C;
-NODES : N O D E S;
 TERMINATE : T E R M I N A T E;
 fragment CHAR : . ;
 fragment A : ('A'|'a');

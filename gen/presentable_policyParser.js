@@ -39,45 +39,45 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u001b\u0003\u001b\u0003\u001c\u0003\u001c\u0003\u001d\u0003\u001d\u0003",
     "\u001d\u0003\u001d\u0003\u001e\u0003\u001e\u0003\u001e\u0003\u001e\u0003",
     "\u001e\u0002\u0003\u0006\u001f\u0002\u0004\u0006\b\n\f\u000e\u0010\u0012",
-    "\u0014\u0016\u0018\u001a\u001c\u001e \"$&(*,.02468:\u0002\u0004\u0005",
-    "\u0002\u001d\u001d\u001f $%\u0004\u0002\u0012\u0012\u001a\u001c\u0002",
-    "\u00d3\u0002?\u0003\u0002\u0002\u0002\u0004D\u0003\u0002\u0002\u0002",
-    "\u0006Q\u0003\u0002\u0002\u0002\bc\u0003\u0002\u0002\u0002\ne\u0003",
-    "\u0002\u0002\u0002\fz\u0003\u0002\u0002\u0002\u000e\u0086\u0003\u0002",
-    "\u0002\u0002\u0010\u0088\u0003\u0002\u0002\u0002\u0012\u008b\u0003\u0002",
-    "\u0002\u0002\u0014\u008e\u0003\u0002\u0002\u0002\u0016\u0091\u0003\u0002",
-    "\u0002\u0002\u0018\u0095\u0003\u0002\u0002\u0002\u001a\u0097\u0003\u0002",
-    "\u0002\u0002\u001c\u009e\u0003\u0002\u0002\u0002\u001e\u00a0\u0003\u0002",
-    "\u0002\u0002 \u00a6\u0003\u0002\u0002\u0002\"\u00a9\u0003\u0002\u0002",
-    "\u0002$\u00b7\u0003\u0002\u0002\u0002&\u00b9\u0003\u0002\u0002\u0002",
-    "(\u00bc\u0003\u0002\u0002\u0002*\u00c1\u0003\u0002\u0002\u0002,\u00c3",
-    "\u0003\u0002\u0002\u0002.\u00c6\u0003\u0002\u0002\u00020\u00c9\u0003",
-    "\u0002\u0002\u00022\u00cb\u0003\u0002\u0002\u00024\u00cd\u0003\u0002",
-    "\u0002\u00026\u00cf\u0003\u0002\u0002\u00028\u00d1\u0003\u0002\u0002",
-    "\u0002:\u00d5\u0003\u0002\u0002\u0002<>\u0005\u0004\u0003\u0002=<\u0003",
-    "\u0002\u0002\u0002>A\u0003\u0002\u0002\u0002?=\u0003\u0002\u0002\u0002",
-    "?@\u0003\u0002\u0002\u0002@B\u0003\u0002\u0002\u0002A?\u0003\u0002\u0002",
-    "\u0002BC\u0007\u0002\u0002\u0003C\u0003\u0003\u0002\u0002\u0002DF\u0007",
-    "\u001e\u0002\u0002EG\u0005\u0006\u0004\u0002FE\u0003\u0002\u0002\u0002",
-    "GH\u0003\u0002\u0002\u0002HF\u0003\u0002\u0002\u0002HI\u0003\u0002\u0002",
-    "\u0002IJ\u0003\u0002\u0002\u0002JN\u0007\u0003\u0002\u0002KM\u0005\b",
-    "\u0005\u0002LK\u0003\u0002\u0002\u0002MP\u0003\u0002\u0002\u0002NL\u0003",
-    "\u0002\u0002\u0002NO\u0003\u0002\u0002\u0002O\u0005\u0003\u0002\u0002",
-    "\u0002PN\u0003\u0002\u0002\u0002QR\b\u0004\u0001\u0002RS\u00054\u001b",
-    "\u0002SY\u0003\u0002\u0002\u0002TU\f\u0003\u0002\u0002UV\u0007\u0004",
-    "\u0002\u0002VX\u0005\u0006\u0004\u0004WT\u0003\u0002\u0002\u0002X[\u0003",
-    "\u0002\u0002\u0002YW\u0003\u0002\u0002\u0002YZ\u0003\u0002\u0002\u0002",
-    "Z\u0007\u0003\u0002\u0002\u0002[Y\u0003\u0002\u0002\u0002\\d\u0007\"",
-    "\u0002\u0002]_\u0005\n\u0006\u0002^`\u0005\f\u0007\u0002_^\u0003\u0002",
-    "\u0002\u0002`a\u0003\u0002\u0002\u0002a_\u0003\u0002\u0002\u0002ab\u0003",
-    "\u0002\u0002\u0002bd\u0003\u0002\u0002\u0002c\\\u0003\u0002\u0002\u0002",
-    "c]\u0003\u0002\u0002\u0002d\t\u0003\u0002\u0002\u0002ef\u0007\u0005",
-    "\u0002\u0002fg\u0007#\u0002\u0002gh\u0007\u0003\u0002\u0002h\u000b\u0003",
-    "\u0002\u0002\u0002ij\u0007\u0006\u0002\u0002jk\u0007#\u0002\u0002ko",
-    "\u0007\u0007\u0002\u0002ln\u0007\b\u0002\u0002ml\u0003\u0002\u0002\u0002",
-    "nq\u0003\u0002\u0002\u0002om\u0003\u0002\u0002\u0002op\u0003\u0002\u0002",
-    "\u0002pr\u0003\u0002\u0002\u0002qo\u0003\u0002\u0002\u0002rv\u0005\u000e",
-    "\b\u0002su\u0005\u0010\t\u0002ts\u0003\u0002\u0002\u0002ux\u0003\u0002",
+    "\u0014\u0016\u0018\u001a\u001c\u001e \"$&(*,.02468:\u0002\u0004\u0004",
+    "\u0002\u001e!$%\u0004\u0002\u0012\u0012\u001a\u001c\u0002\u00d3\u0002",
+    "?\u0003\u0002\u0002\u0002\u0004D\u0003\u0002\u0002\u0002\u0006Q\u0003",
+    "\u0002\u0002\u0002\bc\u0003\u0002\u0002\u0002\ne\u0003\u0002\u0002\u0002",
+    "\fz\u0003\u0002\u0002\u0002\u000e\u0086\u0003\u0002\u0002\u0002\u0010",
+    "\u0088\u0003\u0002\u0002\u0002\u0012\u008b\u0003\u0002\u0002\u0002\u0014",
+    "\u008e\u0003\u0002\u0002\u0002\u0016\u0091\u0003\u0002\u0002\u0002\u0018",
+    "\u0095\u0003\u0002\u0002\u0002\u001a\u0097\u0003\u0002\u0002\u0002\u001c",
+    "\u009e\u0003\u0002\u0002\u0002\u001e\u00a0\u0003\u0002\u0002\u0002 ",
+    "\u00a6\u0003\u0002\u0002\u0002\"\u00a9\u0003\u0002\u0002\u0002$\u00b7",
+    "\u0003\u0002\u0002\u0002&\u00b9\u0003\u0002\u0002\u0002(\u00bc\u0003",
+    "\u0002\u0002\u0002*\u00c1\u0003\u0002\u0002\u0002,\u00c3\u0003\u0002",
+    "\u0002\u0002.\u00c6\u0003\u0002\u0002\u00020\u00c9\u0003\u0002\u0002",
+    "\u00022\u00cb\u0003\u0002\u0002\u00024\u00cd\u0003\u0002\u0002\u0002",
+    "6\u00cf\u0003\u0002\u0002\u00028\u00d1\u0003\u0002\u0002\u0002:\u00d5",
+    "\u0003\u0002\u0002\u0002<>\u0005\u0004\u0003\u0002=<\u0003\u0002\u0002",
+    "\u0002>A\u0003\u0002\u0002\u0002?=\u0003\u0002\u0002\u0002?@\u0003\u0002",
+    "\u0002\u0002@B\u0003\u0002\u0002\u0002A?\u0003\u0002\u0002\u0002BC\u0007",
+    "\u0002\u0002\u0003C\u0003\u0003\u0002\u0002\u0002DF\u0007\u001d\u0002",
+    "\u0002EG\u0005\u0006\u0004\u0002FE\u0003\u0002\u0002\u0002GH\u0003\u0002",
+    "\u0002\u0002HF\u0003\u0002\u0002\u0002HI\u0003\u0002\u0002\u0002IJ\u0003",
+    "\u0002\u0002\u0002JN\u0007\u0003\u0002\u0002KM\u0005\b\u0005\u0002L",
+    "K\u0003\u0002\u0002\u0002MP\u0003\u0002\u0002\u0002NL\u0003\u0002\u0002",
+    "\u0002NO\u0003\u0002\u0002\u0002O\u0005\u0003\u0002\u0002\u0002PN\u0003",
+    "\u0002\u0002\u0002QR\b\u0004\u0001\u0002RS\u00054\u001b\u0002SY\u0003",
+    "\u0002\u0002\u0002TU\f\u0003\u0002\u0002UV\u0007\u0004\u0002\u0002V",
+    "X\u0005\u0006\u0004\u0004WT\u0003\u0002\u0002\u0002X[\u0003\u0002\u0002",
+    "\u0002YW\u0003\u0002\u0002\u0002YZ\u0003\u0002\u0002\u0002Z\u0007\u0003",
+    "\u0002\u0002\u0002[Y\u0003\u0002\u0002\u0002\\d\u0007\"\u0002\u0002",
+    "]_\u0005\n\u0006\u0002^`\u0005\f\u0007\u0002_^\u0003\u0002\u0002\u0002",
+    "`a\u0003\u0002\u0002\u0002a_\u0003\u0002\u0002\u0002ab\u0003\u0002\u0002",
+    "\u0002bd\u0003\u0002\u0002\u0002c\\\u0003\u0002\u0002\u0002c]\u0003",
+    "\u0002\u0002\u0002d\t\u0003\u0002\u0002\u0002ef\u0007\u0005\u0002\u0002",
+    "fg\u0007#\u0002\u0002gh\u0007\u0003\u0002\u0002h\u000b\u0003\u0002\u0002",
+    "\u0002ij\u0007\u0006\u0002\u0002jk\u0007#\u0002\u0002ko\u0007\u0007",
+    "\u0002\u0002ln\u0007\b\u0002\u0002ml\u0003\u0002\u0002\u0002nq\u0003",
+    "\u0002\u0002\u0002om\u0003\u0002\u0002\u0002op\u0003\u0002\u0002\u0002",
+    "pr\u0003\u0002\u0002\u0002qo\u0003\u0002\u0002\u0002rv\u0005\u000e\b",
+    "\u0002su\u0005\u0010\t\u0002ts\u0003\u0002\u0002\u0002ux\u0003\u0002",
     "\u0002\u0002vt\u0003\u0002\u0002\u0002vw\u0003\u0002\u0002\u0002w{\u0003",
     "\u0002\u0002\u0002xv\u0003\u0002\u0002\u0002y{\u0007\"\u0002\u0002z",
     "i\u0003\u0002\u0002\u0002zy\u0003\u0002\u0002\u0002{\r\u0003\u0002\u0002",
@@ -126,7 +126,7 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u00c5\u0007$\u0002\u0002\u00c5-\u0003\u0002\u0002\u0002\u00c6\u00c7",
     "\u0007\u0018\u0002\u0002\u00c7\u00c8\u0007$\u0002\u0002\u00c8/\u0003",
     "\u0002\u0002\u0002\u00c9\u00ca\u0007\u0019\u0002\u0002\u00ca1\u0003",
-    "\u0002\u0002\u0002\u00cb\u00cc\u0007#\u0002\u0002\u00cc3\u0003\u0002",
+    "\u0002\u0002\u0002\u00cb\u00cc\u0007&\u0002\u0002\u00cc3\u0003\u0002",
     "\u0002\u0002\u00cd\u00ce\t\u0002\u0002\u0002\u00ce5\u0003\u0002\u0002",
     "\u0002\u00cf\u00d0\t\u0003\u0002\u0002\u00d07\u0003\u0002\u0002\u0002",
     "\u00d1\u00d2\u0007$\u0002\u0002\u00d2\u00d3\u0007\u0003\u0002\u0002",
@@ -154,8 +154,8 @@ var literalNames = [ null, "':'", "','", "'in'", "'proceed to'", "'on'",
 var symbolicNames = [ null, null, null, null, null, null, null, null, null, 
                       null, null, null, null, null, null, null, null, null, 
                       null, null, null, null, null, null, null, null, null, 
-                      "GROUPUSER", "FOR", "REGISTERED_USERS", "PUBLIC", 
-                      "NODES", "TERMINATE", "ID", "INTEGER_NUMBER", "USERACCOUNT", 
+                      "FOR", "SELF", "GROUPUSER", "REGISTERED_USERS", "PUBLIC", 
+                      "TERMINATE", "ID", "INTEGER_NUMBER", "USERACCOUNT", 
                       "FEATHERACCOUNT", "WS", "DATE" ];
 
 var ruleNames =  [ "p", "segment", "audience_clause", "state_clause", "current_state_clause", 
@@ -213,11 +213,11 @@ presentable_policyParser.T__22 = 23;
 presentable_policyParser.T__23 = 24;
 presentable_policyParser.T__24 = 25;
 presentable_policyParser.T__25 = 26;
-presentable_policyParser.GROUPUSER = 27;
-presentable_policyParser.FOR = 28;
-presentable_policyParser.REGISTERED_USERS = 29;
-presentable_policyParser.PUBLIC = 30;
-presentable_policyParser.NODES = 31;
+presentable_policyParser.FOR = 27;
+presentable_policyParser.SELF = 28;
+presentable_policyParser.GROUPUSER = 29;
+presentable_policyParser.REGISTERED_USERS = 30;
+presentable_policyParser.PUBLIC = 31;
 presentable_policyParser.TERMINATE = 32;
 presentable_policyParser.ID = 33;
 presentable_policyParser.INTEGER_NUMBER = 34;
@@ -414,7 +414,7 @@ presentable_policyParser.prototype.segment = function() {
             this.state = 70; 
             this._errHandler.sync(this);
             _la = this._input.LA(1);
-        } while(((((_la - 27)) & ~0x1f) == 0 && ((1 << (_la - 27)) & ((1 << (presentable_policyParser.GROUPUSER - 27)) | (1 << (presentable_policyParser.REGISTERED_USERS - 27)) | (1 << (presentable_policyParser.PUBLIC - 27)) | (1 << (presentable_policyParser.INTEGER_NUMBER - 27)) | (1 << (presentable_policyParser.USERACCOUNT - 27)))) !== 0));
+        } while(((((_la - 28)) & ~0x1f) == 0 && ((1 << (_la - 28)) & ((1 << (presentable_policyParser.SELF - 28)) | (1 << (presentable_policyParser.GROUPUSER - 28)) | (1 << (presentable_policyParser.REGISTERED_USERS - 28)) | (1 << (presentable_policyParser.PUBLIC - 28)) | (1 << (presentable_policyParser.INTEGER_NUMBER - 28)) | (1 << (presentable_policyParser.USERACCOUNT - 28)))) !== 0));
         this.state = 72;
         this.match(presentable_policyParser.T__0);
         this.state = 76;
@@ -1634,7 +1634,7 @@ presentable_policyParser.prototype.signing_event = function() {
             this.state = 177; 
             this._errHandler.sync(this);
             _la = this._input.LA(1);
-        } while(_la===presentable_policyParser.T__1 || _la===presentable_policyParser.ID);
+        } while(_la===presentable_policyParser.T__1 || _la===presentable_policyParser.FEATHERACCOUNT);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -2117,8 +2117,8 @@ function License_resource_idContext(parser, parent, invokingState) {
 License_resource_idContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
 License_resource_idContext.prototype.constructor = License_resource_idContext;
 
-License_resource_idContext.prototype.ID = function() {
-    return this.getToken(presentable_policyParser.ID, 0);
+License_resource_idContext.prototype.FEATHERACCOUNT = function() {
+    return this.getToken(presentable_policyParser.FEATHERACCOUNT, 0);
 };
 
 License_resource_idContext.prototype.enterRule = function(listener) {
@@ -2145,7 +2145,7 @@ presentable_policyParser.prototype.license_resource_id = function() {
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 201;
-        this.match(presentable_policyParser.ID);
+        this.match(presentable_policyParser.FEATHERACCOUNT);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -2175,6 +2175,10 @@ function UsersContext(parser, parent, invokingState) {
 
 UsersContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
 UsersContext.prototype.constructor = UsersContext;
+
+UsersContext.prototype.SELF = function() {
+    return this.getToken(presentable_policyParser.SELF, 0);
+};
 
 UsersContext.prototype.GROUPUSER = function() {
     return this.getToken(presentable_policyParser.GROUPUSER, 0);
@@ -2222,7 +2226,7 @@ presentable_policyParser.prototype.users = function() {
         this.enterOuterAlt(localctx, 1);
         this.state = 203;
         _la = this._input.LA(1);
-        if(!(((((_la - 27)) & ~0x1f) == 0 && ((1 << (_la - 27)) & ((1 << (presentable_policyParser.GROUPUSER - 27)) | (1 << (presentable_policyParser.REGISTERED_USERS - 27)) | (1 << (presentable_policyParser.PUBLIC - 27)) | (1 << (presentable_policyParser.INTEGER_NUMBER - 27)) | (1 << (presentable_policyParser.USERACCOUNT - 27)))) !== 0))) {
+        if(!(((((_la - 28)) & ~0x1f) == 0 && ((1 << (_la - 28)) & ((1 << (presentable_policyParser.SELF - 28)) | (1 << (presentable_policyParser.GROUPUSER - 28)) | (1 << (presentable_policyParser.REGISTERED_USERS - 28)) | (1 << (presentable_policyParser.PUBLIC - 28)) | (1 << (presentable_policyParser.INTEGER_NUMBER - 28)) | (1 << (presentable_policyParser.USERACCOUNT - 28)))) !== 0))) {
         this._errHandler.recoverInline(this);
         }
         else {
