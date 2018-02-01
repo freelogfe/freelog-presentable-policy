@@ -17,7 +17,7 @@ current_state_clause
   : 'in' ID ':'
   ;
 target_clause
-  : 'proceed to' ID 'on' ('accepting')* event (and_event)*
+  : 'proceed to' ID 'on' event (and_event)*
   | TERMINATE
   ;
 event
@@ -36,10 +36,10 @@ and_event
 : 'and on' event
 ;
 period_event
-: 'the end of' time_unit
+: 'on the end of' time_unit
 ;
 specific_date_event
-: 'date' DATE
+: 'on date' DATE
 ;
 relative_date_event
 : INTEGER_NUMBER time_unit 'after contract creation'
@@ -61,7 +61,7 @@ platform_guaranty
 : 'platform_guaranty of' INTEGER_NUMBER
 ;
 signing_event
-: 'license' ((',')*license_resource_id)+
+: 'accepting license' ((',')*license_resource_id)+
 ;
 access_count_event
 : visit_increment_event
