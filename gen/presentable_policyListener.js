@@ -254,23 +254,5 @@ presentable_policyListener.prototype.exitTime_unit = function(ctx) {
 };
 
 
-// Enter a parse tree produced by presentable_policyParser#start_hour.
-presentable_policyListener.prototype.enterStart_hour = function(ctx) {
-};
-
-// Exit a parse tree produced by presentable_policyParser#start_hour.
-presentable_policyListener.prototype.exitStart_hour = function(ctx) {
-};
-
-
-// Enter a parse tree produced by presentable_policyParser#end_hour.
-presentable_policyListener.prototype.enterEnd_hour = function(ctx) {
-};
-
-// Exit a parse tree produced by presentable_policyParser#end_hour.
-presentable_policyListener.prototype.exitEnd_hour = function(ctx) {
-};
-
-
 
 exports.presentable_policyListener = presentable_policyListener;
