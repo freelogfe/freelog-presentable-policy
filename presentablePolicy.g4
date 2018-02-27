@@ -1,6 +1,6 @@
-grammar presentable_policy;
+grammar presentablePolicy;
 
-p : (segment)* EOF
+policy : (segment)* EOF
 ;
 segment : FOR audience_clause+ ':' (state_clause)*
 ;

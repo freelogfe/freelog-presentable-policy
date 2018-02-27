@@ -1,13 +1,24 @@
 {
-  "name": "presentable_policy_lang",
-  "version": "1.2.8",
-  "description": "",
+  "name": "@freelog/presentable-policy-lang",
+  "version": "0.0.1",
+  "description": "freelog presentable policy language",
   "main": "index.js",
   "scripts": {
-    "gen": "java -jar C:/Users/Phil/lib/antlr-4.7-complete.jar -Dlanguage=JavaScript presentable_policy.g4 -o gen"
+    "publish": "npm publish --access=public",
+    "build": "antlr4 -Dlanguage=JavaScript presentablePolicy.g4 -o lib"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:freelogfe/presentable-policy-lang.git"
+  },
+  "author": "Jin Xiao",
+  "license": "MIT",
+  "keywords": [
+    "freelog",
+    "policy",
+    "antlr4",
+    "language"
+  ],
   "dependencies": {
     "antlr4": "^4.7.0"
   }
