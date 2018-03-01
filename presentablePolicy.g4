@@ -10,8 +10,7 @@ audience_clause
   ;
 
 state_clause
-  : TERMINATE
-  | current_state_clause (target_clause)+
+  : current_state_clause (target_clause)+
   ;
 current_state_clause
   : 'in' ID ':'
@@ -39,7 +38,7 @@ period_event
 : 'end of' time_unit
 ;
 specific_date_event
-: 'date' DATE
+: 'arriving date' DATE  //具体到秒？
 ;
 relative_date_event
 : INTEGER_NUMBER time_unit 'after contract creation'
@@ -48,7 +47,7 @@ pricing_agreement_event
 : 'price priceExpression'
 ;
 transaction_event
-: 'transaction of' INTEGER_NUMBER 'to' FEATHERACCOUNT
+: 'receiving transaction of' INTEGER_NUMBER 'to' FEATHERACCOUNT
 ;
 guaranty_event
 : contract_guaranty
@@ -107,7 +106,7 @@ fragment E : ('E'|'e');
 fragment F : ('F'|'f');
 fragment G : ('G'|'g');
 fragment H : ('H'|'h');
-fragment I  :  ('I'|'i');
+fragment I :  ('I'|'i');
 fragment J : ('J'|'j');
 fragment K : ('K'|'k');
 fragment L : ('L'|'l');
