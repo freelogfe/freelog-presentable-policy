@@ -10,11 +10,11 @@ audience_clause
   ;
 
 state_clause
-  : initial_state_clause (current_state_clause target_clause+)*
+  : initial_state_clause target_clause+ (current_state_clause target_clause+)*
   ;
 
 initial_state_clause
-: 'in' ('initial' | '<initial>') target_clause+
+: 'in' ('initial' | '<initial>') ':'
 ;
 
 current_state_clause
@@ -47,13 +47,11 @@ period_event
 ;
 
 specific_date_event
-: 'arriving date' DATE  //具体到秒？
+: 'arriving date' DATE HOUR //具体到秒？
 ;
 relative_date_event
-: duration 'after contract creation'
+: INTEGER_NUMBER time_unit 'after contract creation'
 ;
-
-duration: INTEGER_NUMBER time_unit;
 
 pricing_agreement_event
 : 'price priceExpression'
@@ -155,17 +153,23 @@ fragment UPPERCASE : [A-Z];
 fragment ALPHA : [a-zA-Z];
 
 ID  : [<>a-zA-Z_]+;
-INTEGER_NUMBER:  DIGIT+;
 
 MOBILEPHONE: '1' [34578] NIGHT_DIGITS;
 EMAIL :  (ALPHA | '.' | DIGIT)+  '@' (ALPHA | '.' | DIGIT)+;
 FEATHERACCOUNT : 'f' ALPHANUMERIC;
-ALPHANUMERIC : (ALPHA | DIGIT)+;
 
-DATE : FOUR_DIGITS '-' INTEGER_NUMBER '-' INTEGER_NUMBER HOUR;
+TWO_DIGITS
+  : DIGIT DIGIT
+  ;
+
 HOUR
   : TWO_DIGITS ':' TWO_DIGITS (':' TWO_DIGITS)?
   ;
+INTEGER_NUMBER:  DIGIT+;
+
+DATE : FOUR_DIGITS '-' INTEGER_NUMBER '-' INTEGER_NUMBER;
+
+ALPHANUMERIC : (ALPHA | DIGIT)+;
 
 NIGHT_DIGITS:
  DIGIT DIGIT DIGIT DIGIT DIGIT DIGIT DIGIT DIGIT DIGIT;
@@ -173,8 +177,4 @@ NIGHT_DIGITS:
 FOUR_DIGITS
   : DIGIT DIGIT DIGIT DIGIT
   ;
-TWO_DIGITS
-  : DIGIT DIGIT DIGIT DIGIT
-  ;
-
 WS  : [ \t\r\n]+ -> skip;

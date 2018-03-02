@@ -1,6 +1,6 @@
 {
   "name": "@freelog/presentable-policy-lang",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "freelog presentable policy language",
   "main": "index.js",
   "scripts": {
