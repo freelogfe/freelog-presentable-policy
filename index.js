@@ -1,9 +1,3 @@
-const {presentablePolicyLexer} = require('./lib/presentablePolicyLexer');
-const {presentablePolicyParser} = require('./lib/presentablePolicyParser');
-const {presentablePolicyListener} = require('./lib/presentablePolicyListener');
-
-module.exports = {
-  presentablePolicyLexer,
-  presentablePolicyParser,
-  presentablePolicyListener
-}
+module.exports.presentablePolicyLexer = require('./lib/presentablePolicyLexer').presentablePolicyLexer;
+module.exports.presentablePolicyParser = require('./lib/presentablePolicyParser').presentablePolicyParser;
+module.exports.presentablePolicyListener = require('./lib/presentablePolicyListener').presentablePolicyListener;
