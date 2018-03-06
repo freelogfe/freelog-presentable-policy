@@ -31,7 +31,7 @@ event
   | relative_date_event
   | pricing_agreement_event
   | 'on' transaction_event
-  | guaranty_event
+  | 'on' guaranty_event
   | 'on' signing_event
   | 'on' access_count_event
   | 'on' balance_event
@@ -71,7 +71,7 @@ contract_guaranty
 ;
 
 platform_guaranty
-: 'platform_guaranty of' INTEGER_NUMBER
+: 'receiving platform_guaranty of' INTEGER_NUMBER
 ;
 
 signing_event
