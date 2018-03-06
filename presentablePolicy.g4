@@ -21,36 +21,36 @@ current_state_clause
   : 'in' ID ':'
   ;
 target_clause
-  : 'proceed to' ID 'on' event (and_event)*
+  : 'proceed to' ID event (and_event)*
   | TERMINATE
   ;
 
 event
-  : period_event
+  : 'on' period_event
   | specific_date_event
   | relative_date_event
   | pricing_agreement_event
-  | transaction_event
+  | 'on' transaction_event
   | guaranty_event
-  | signing_event
-  | access_count_event
-  | balance_event
+  | 'on' signing_event
+  | 'on' access_count_event
+  | 'on' balance_event
   | settlement_event
   ;
 
 and_event
-: 'and on' event
+: 'and' event
 ;
 
 period_event
-: 'end of' time_unit
+: 'end of' TIMEUNIT
 ;
 
 specific_date_event
-: 'arriving date' DATE HOUR //具体到秒？
+: 'at' DATE HOUR //具体到秒？
 ;
 relative_date_event
-: INTEGER_NUMBER time_unit 'after contract creation'
+: 'after' INTEGER_NUMBER TIMEUNIT 'of contract creation'
 ;
 
 pricing_agreement_event
@@ -67,7 +67,7 @@ guaranty_event
 ;
 
 contract_guaranty
-: 'contract_guaranty of' INTEGER_NUMBER 'refund after' INTEGER_NUMBER 'day'
+: 'contract_guaranty of' INTEGER_NUMBER 'refund after' INTEGER_NUMBER TIMEUNIT
 ;
 
 platform_guaranty
@@ -111,7 +111,7 @@ settlement_event
 license_resource_id : ALPHANUMERIC;
 users : SELF | GROUPUSER | REGISTERED_USERS | PUBLIC | MOBILEPHONE | EMAIL;
 
-time_unit : ('year' | 'week' | 'day'| 'cycle') 's'?;
+TIMEUNIT : Y E A R S? | W E E K S? | D A Y S? | C Y C L E S?;
 
 FOR: F O R;
 SELF : S E L F;
@@ -119,6 +119,7 @@ GROUPUSER :  G R O U P '_' U S E R '_' ID*;
 REGISTERED_USERS : R E G I S T E R E D '_' U S E R S;
 PUBLIC : P U B L I C;
 TERMINATE : T E R M I N A T E;
+
 fragment CHAR : . ;
 fragment A : ('A'|'a');
 fragment B : ('B'|'b');
@@ -167,7 +168,7 @@ HOUR
   ;
 INTEGER_NUMBER:  DIGIT+;
 
-DATE : FOUR_DIGITS '-' INTEGER_NUMBER '-' INTEGER_NUMBER;
+DATE : FOUR_DIGITS '-' TWO_DIGITS '-' TWO_DIGITS;
 
 ALPHANUMERIC : (ALPHA | DIGIT)+;
 
