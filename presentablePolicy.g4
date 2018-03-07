@@ -115,7 +115,7 @@ TIMEUNIT : Y E A R S? | W E E K S? | D A Y S? | C Y C L E S?;
 
 FOR: F O R;
 SELF : S E L F;
-GROUPUSER :  G R O U P '_' U S E R '_' ID*;
+GROUPUSER :  G R O U P '_' ((U S E R)|(N O D E)) '_' ALPHANUMERIC;
 REGISTERED_USERS : R E G I S T E R E D '_' U S E R S;
 PUBLIC : P U B L I C;
 TERMINATE : T E R M I N A T E;
