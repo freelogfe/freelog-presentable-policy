@@ -14,7 +14,7 @@ state_clause
   ;
 
 initial_state_clause
-: 'in' ('initial' | '<initial>') ':'
+: 'in' ('initial' | '<initial>' | 'init' | '<init>') ':'
 ;
 
 current_state_clause
